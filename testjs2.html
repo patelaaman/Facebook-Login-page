@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            
+            function Add()
+            {
+                a=document.getElementById("n1").value;
+                b=document.getElementById("n2").value;
+                
+               // document.write("A="+a);
+               // document.write("B="+b);
+               c =parseInt(a)+parseInt(b);
+               
+              // document.write("Addition="+c)
+              document.getElementById("s1").innerHTML="Result="+c;
+            }
+            function Sub()
+            {
+                a=document.getElementById("n1").value;
+                b=document.getElementById("n2").value;
+                c =parseInt(a)-parseInt(b);
+               document.write("Addition="+c)
+               
+            }
+            function Mul()
+            {
+                a=document.getElementById("n1").value;
+                b=document.getElementById("n2").value;
+                c =parseInt(a)*parseInt(b);
+               document.write("Multiplication="+c)
+               
+            }
+            function div()
+            {
+                a=document.getElementById("n1").value;
+                b=document.getElementById("n2").value;
+                c =parseInt(a)/parseInt(b);
+               document.write("Divition="+c)
+               
+            }
+            function Mod()
+            {
+                a=document.getElementById("n1").value;
+                b=document.getElementById("n2").value;
+                c =parseInt(a)% parseInt(b);
+               document.write("Modulus="+c)
+               
+            }
+        </script>
+        <style>
+            #container
+            {
+                background-color: aqua;
+            }
+            #header
+            {
+                background-color: khaki;
+            }
+            #menu
+            {
+                background-color: brown;
+            }
+            #lcontent
+            {
+                background-color: navajowhite;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <table align="center" border="2" id="header">
+            <tr>
+                <td>Enter first number:</td>
+                <td>
+                    <input type="text" id="n1">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter second number:</td>
+                <td>
+                   <input type="text" id="n2"  >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="s1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td id="menu" colspan="2">
+                    <input  type="submit"  value="Addition" onclick="Add()">
+                    <input  type="submit"  value="Subtraction" onclick="Sub()">
+                    <input  type="submit"  value="Multiplication" onclick="Mul()">
+                    <input  type="submit" value="Divition" onclick="div()">
+                    <input  type="submit" value="Modulus" onclick="Mod()">
+                </td>
+                
+            </tr>
+        </table>
+    </body>
+</html>

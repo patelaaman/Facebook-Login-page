@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Aug, 2022, 3:21:58 PM
+    Author     : hp
+*/
+*{
+    margin: 0;
+    padding:0;
+    font-family:sans-serif;
+}
+.header{
+    height: 200vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 10px 100px;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+nav ul{
+    text-align: right;
+    display: inline;
+    list-style: none;
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    nargin: 50 20px;
+}
+.main-text{
+    margin: 40% auto;
+}
+.main-text h1{
+    font-size:50px;
+    text-align:center;
+}
+.main-text h2{
+    font-size: 30px;
+    text-align:center;
+}
+.main-text .button{
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    heigh:35px;
+    margine:25px auto;
+    color: #fff;
+    line-height: 35px;
+    border: 1px solid #fff;
+}
+.button:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+.bootom-img{
+    height: 400px;
+    positoin: absolutes; 
+    text-align: center;
+    botton:0;
+    opacity: 0.8;
+    animation:animate 8s linear infinite;
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -1900px;
+    }
+}
